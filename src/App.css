@@ -1,0 +1,135 @@
+/* Background */
+.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+}
+
+.cameraFrameContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Camera */
+.camera {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.cameraFrame {
+  max-height: 80%;
+  position: relative;
+  max-width: 800px;
+}
+
+.cameraFrame > img {
+  max-width: 100%;
+  max-height: 100%;
+  transform: translatey(4px);
+}
+
+.screen {
+  width: 70%;
+  position: absolute;
+  top: 10.5%;
+  left: 2%;
+  aspect-ratio: 1.27;
+  background-color: black;
+}
+
+.filterControl {
+  position: absolute;
+  right: 15px;
+  top: 7%;
+  width: 25%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.words {
+  color: white;
+  font-size: 1rem;
+}
+
+.wordsFilter {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.lens {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  padding: 12px;
+  border-radius: 9999px;
+  aspect-ratio: 1/1;
+  margin: 0 16px;
+}
+
+.lens > div {
+  border-radius: 9999px;
+  aspect-ratio: 1/1;
+  position: relative;
+  border: #2b2b2b solid 3px;
+}
+
+.wordsColor {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Lighting*/
+.lamp {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+}
+
+.lamp > img {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}
+
+.lightbulb {
+  position: relative;
+  width: 4%;
+  aspect-ratio: 1 / 1;
+  background-color: black;
+  border-radius: 9999px;
+  transform: translatey(-50%);
+}
+
+.lampControl {
+  position: absolute;
+  width: 20%;
+  left: 20px;
+  bottom: 20px;
+  aspect-ratio: 1 / 1;
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.wordsControl {
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+}
